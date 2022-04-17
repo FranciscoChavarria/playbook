@@ -5,4 +5,4 @@ const repo1 = new Repo("LaunchX","Francisco Chavarria", "JavaScript",100,199,299
 
 // invocación del método
 repo1.getTotalIssues();
-repo1.getGeneralInfo();
+//repo1.getGeneralInfo();
