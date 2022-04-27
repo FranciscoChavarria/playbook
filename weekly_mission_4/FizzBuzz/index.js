@@ -1,7 +1,9 @@
-const Reader = require("./lib/utils/Reader");
-const ExplorerService = require("./lib/services/ExplorerService");
-const FizzbuzzService = require("./lib/services/FizzbuzzService");
+//const Reader = require("./lib/utils/Reader");
+//const ExplorerService = require("./lib/services/ExplorerService");
+//const FizzbuzzService = require("./lib/services/FizzbuzzService");
+const ExplorerController = require("./lib/controllers/ExplorerController");
 
+/* Pruebas del Ejercicio 1
 const explorers = Reader.readJsonFile("explorers.json");
 const filtro = ExplorerService.filterByMission(explorers, "node");
 const cantidad = ExplorerService.getAmountOfExplorersByMission(explorers, "node");
@@ -22,3 +24,7 @@ console.log(FizzbuzzService.applyValidationInExplorer(explorer5)); // {name: "Ex
 
 const explorer15 = {name: "Explorer15", score: 15};
 console.log(FizzbuzzService.applyValidationInExplorer(explorer15)); // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
+Fin Pruebas Ejercicio 1*/
+
+//Pruebas Ejercicio 2 llamado desde ExplorerController
+console.log(ExplorerController.getExplorersByMission("node"));
