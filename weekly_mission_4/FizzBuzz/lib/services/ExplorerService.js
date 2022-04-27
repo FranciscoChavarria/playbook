@@ -7,7 +7,7 @@ class ExplorerService{
 
     static getAmountOfExplorersByMission(explorers, mission){
         const explorersInNode = explorers.filter((explorer) => explorer.mission == mission);
-        return explorersInNode.length
+        return explorersInNode.length;
     }
 
     static getExplorersUsernamesByMission(explorers, mission){
@@ -16,4 +16,4 @@ class ExplorerService{
     }
 }
 
-module.exports = ExplorerService
+module.exports = ExplorerService;

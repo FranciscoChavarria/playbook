@@ -6,12 +6,12 @@ const explorers = JSON.parse(rawdata);
 
 // Part 2: Get the quantity of explorers names in node
 const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
-console.log(explorersInNode.length)
+console.log(explorersInNode.length);
 
 // Part4: Get the explorer's usernames in Node
 const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
 const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
-console.log(usernamesInNode)
+console.log(usernamesInNode);
 
 // DEAD CODE: Part 5,6,7, please remove this and go to Part 8!
 
@@ -31,7 +31,7 @@ const assignFizzTrick = function(explorer){
 };
 
 const explorersInNodeAndFizzTrick = explorersInNode.map((explorer) => assignFizzTrick(explorer));
-console.log(explorersInNodeAndFizzTrick)
+console.log(explorersInNodeAndFizzTrick);
 
 // Part 6: Get a new list of explorers in node if the score number is divisible by 5, we need to set a new property called trick and set the value BUZZ, if not this value should be just the score
 //
