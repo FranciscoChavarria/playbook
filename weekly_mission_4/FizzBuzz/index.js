@@ -4,6 +4,8 @@ const ExplorerService = require("./lib/services/ExplorerService");
 const explorers = Reader.readJsonFile("explorers.json");
 const filtro = ExplorerService.filterByMission(explorers, "node");
 const cantidad = ExplorerService.getAmountOfExplorersByMission(explorers, "node");
+const nombres = ExplorerService.getExplorersUsernamesByMission(explorers, "node");
 
 console.log(filtro);
 console.log(cantidad);
+console.log(nombres);
