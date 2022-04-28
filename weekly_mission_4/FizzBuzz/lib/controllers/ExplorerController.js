@@ -9,10 +9,12 @@ class ExplorerController{
     }
 
     static getExplorersUsernamesByMission(mission){
+        const explorers = Reader.readJsonFile("explorers.json");
         return ExplorerService.getExplorersUsernamesByMission(explorers, "node");
     }
 
     static getExplorersAmonutByMission(mission){
+        const explorers = Reader.readJsonFile("explorers.json");
         return ExplorerService.getAmountOfExplorersByMission(explorers, "node");
     }
 }
